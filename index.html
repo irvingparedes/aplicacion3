@@ -1,0 +1,362 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/3app.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="acciones" type="text/javascript"></script>
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="wow/engine1/style.css" />
+	<script type="text/javascript" src="wow/engine1/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section -->
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/ubi2.jpg','imagenes/ta2.jpg','imagenes/ac2.jpg')"><div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-add-back-btn="Regresar" data-back-btn-theme="b">
+  <h1>datos del volcan </h1>
+   </div>
+<div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>popocatepelt</h1>
+   
+   <div>
+  <!-- Start WOWSlider.com BODY section -->
+	<div id="wowslider-container1">
+	<div class="ws_images"><ul>
+<li><img src="wow/data1/images/1.jpg" alt="1" title="1" id="wows1_0"/></li>
+<li><img src="wow/data1/images/2.jpg" alt="2" title="2" id="wows1_1"/></li>
+<li><img src="wow/data1/images/3.jpg" alt="3" title="3" id="wows1_2"/></li>
+<li><img src="wow/data1/images/4.jpg" alt="4" title="4" id="wows1_3"/></li>
+<li><img src="wow/data1/images/5.jpg" alt="5" title="5" id="wows1_4"/></li>
+<li><img src="wow/data1/images/6.jpg" alt="6" title="6" id="wows1_5"/></li>
+</ul></div>
+<div class="ws_bullets"><div>
+<a href="#" title="1"><img src="wow/data1/tooltips/1.jpg" alt="1"/>1</a>
+<a href="#" title="2"><img src="wow/data1/tooltips/2.jpg" alt="2"/>2</a>
+<a href="#" title="3"><img src="wow/data1/tooltips/3.jpg" alt="3"/>3</a>
+<a href="#" title="4"><img src="wow/data1/tooltips/4.jpg" alt="4"/>4</a>
+<a href="#" title="5"><img src="wow/data1/tooltips/5.jpg" alt="5"/>5</a>
+<a href="#" title="6"><img src="wow/data1/tooltips/6.jpg" alt="6"/>6</a>
+</div></div>
+<span class="wsl"><a href="http://wowslider.com">HTML5 Slideshow</a> by WOWSlider.com v4.8</span>
+	<a href="#" class="ws_frame"></a>
+	<div class="ws_shadow"></div>
+	</div>
+	<script type="text/javascript" src="engine1/wowslider.js"></script>
+	<script type="text/javascript" src="engine1/script.js"></script>
+	<!-- End WOWSlider.com BODY section --></div>
+   </div>
+   </div>
+   
+   <div>
+   <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>datos </h2>
+   <p>Muestra el lugar donde se encuentra</p>
+   </a>
+   </li>
+    <li class="ui-first-child ui-last-child">
+   <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>leyenda </h2>
+   <p>muestra las creencias que se tiene</p>
+   </a>
+   </li>
+     <li class="ui-first-child ui-last-child">
+   <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>informacion  </h2>
+   <p> Muestra informacion acerca del volcan</p>
+   </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>medidas preventivas</h2>
+   <p>Muestra que hacer en caso de un desastre</p>
+   </a>
+   </li>   
+   
+   </ul>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+   <img src="imagenes/persona_azul.png" width="46" height="46">
+   </div>
+    <div>
+    <h4>Aplicacion tres</h4>
+    <h4>irving paredes ramirez </h4>
+    </div>
+    </div>
+  </div>     
+     <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Datos del volcan</h1>
+</div>
+       <div data-role="content" align="center">
+       <div>
+       <!--asdasdasdasdasds-->
+      <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>ubicacion</h1>
+   <div>
+   <p>Eesta ubicado en los estados de Morelos, Puebla (45 kilometros) y el Estado de México( a 55 kilometros). Al sur de la Sierra Volcánica Transversal que constituye la espina dorsal del Altiplano Mexicano. </p>
+   <br>
+   </div>
+   <div>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','imagenes/ubi2.jpg',1)"><img src="imagenes/ubi.jpg" width="402" height="263" id="Image15"></a></div>
+   </div>
+   </div>
+   <!--asfahsdhgasdkgasdkjhaskasdkaqdasdadasdasdasdasdasdasdasdadasdasdasdsadasshdash-->
+     <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>estados que colindan</h1>
+   <div>
+   <p>puebla,morelos y mexico </p>
+   <br>
+   </div>
+   <div>
+  <img src ="imagenes/col.jpg"></div>
+
+   </div>
+   </div>
+   <!--asdsadasdasd-->
+     <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>tamaño</h1>
+   <div>
+   <p>Eesta ubicado en los estados de Morelos, Puebla (45 kilometros) y el Estado de México( a 55 kilometros). Al sur de la Sierra Volcánica Transversal que constituye la espina dorsal del Altiplano Mexicano.
+   Diámetro mayor del cráter: 900m	Profundidad del cráter: 150m (desde labio inferior) </p>
+   <br>
+   </div>
+   <div>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','imagenes/ta2.jpg',1)"><img src="imagenes/ta.jpg" width="300" height="168" id="Image17"></a></div>
+   </div>
+   </div>
+  
+       </div>
+      
+       </div>
+       <div data-role="footer" data-position="fixed" data-theme="a">
+       <h4>Aplicacion Uno, CRPL </h4>
+       </div>
+       </div>
+       </div>
+       
+       <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>leyenda</h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+       <h2> leyenda popocatepelt y Iztaccíhuatl</h2>
+       <p> La vista que engalana a la ciudad más grande del mundo: la Ciudad de México, está realzada por la majestuosidad de dos de los volcanes más altos del hemisferio, se trata del Popocatépetl y del Iztaccíhuatl.
+
+La presencia milenaria de estos enormes volcanes ha sido de gran importancia en las diferentes sociedades que los han admirado y venerado, siendo fuente de inspiración de múltiples leyendas sobre su origen y creación. Entre ellas las más conocidas son dos que a continuación relataremos.
+
+Hace ya miles de años, cuando el Imperio Azteca estaba en su esplendor y dominaba el Valle de México, como práctica común sometían a los pueblos vecinos, requiriéndoles un tributo obligatorio. Fue entonces cuando el cacique de los Tlaxcaltecas, acérrimos enemigos de los Aztecas, cansado de esta terrible opresión, decidió luchar por la libertad de su pueblo.
+
+El cacique tenía una hija, llamada Iztaccíhuatl, era la princesa más bella y depositó su amor en el joven Popocatépetl, uno de los más apuestos guerreros de su pueblo.
+
+Ambos se profesaban un inmenso amor, por lo que antes de partir a la guerra, Popocatépetl pidió al cacique la mano de la princesa Iztaccíhuatl. El padre accedió gustoso y prometió recibirlo con una gran celebración para darle la mano de su hija si regresaba victorioso de la batalla.
+
+El valiente guerrero aceptó, se preparó para partir y guardó en su corazón la promesa de que la princesa lo esperaría para consumar su amor.
+
+Al poco tiempo, un rival de amores de Popocatépetl, celoso del amor de ambos se profesaban, le dijo a la princesa Iztaccíhuatl que su amado había muerto durante el combate.
+
+Abatida por la tristeza y sin saber que todo era mentira, la princesa murió.
+
+Tiempo después, Popocatépetl regresó victorioso a su pueblo, con la esperanza de ver a su amada. A su llegada, recibió la terrible noticia sobre el fallecimiento de la princesa Iztaccíhuatl.
+
+Entristecido con la noticia, vagó por las calles durante varios días y noches, hasta que decidió hacer algo para honrar su amor y que el recuerdo de la princesa permaneciera en la memoria de los pueblos.
+
+Mandó construir una gran tumba ante el Sol, amontonando 10 cerros para formar una enorme montaña.
+
+ 
+Tomó entre sus brazos el cuerpo de su princesa, lo llevó a la cima y lo recostó inerte sobre la gran montaña.  El joven guerrero le dio un beso póstumo, tomó una antorcha humeante y se arrodilló frente a su amada, para velar así, su sueño eterno.
+Desde aquel entonces permanecen juntos, uno frente a otro. Con el tiempo la nieve cubrió sus cuerpos, convirtiéndose en dos enormes volcanes que seguirán así hasta el final del mundo.
+
+La leyenda añade, que cuando el guerrero Popocatépetl se acuerda de su amada, su corazón que guarda el fuego de la pasión eterna, tiembla y su antorcha echa humo.   Por ello hasta hoy en día, el volcán Popocatépetl continúa arrojando fumarolas.</p>
+<img src="imagenes/le.jpg">
+       </div>
+       <div data-role="footer"data-theme="a"  data-position="fixed">
+       <h4>Aplicacion Uno, CRPL </h4>
+       </div>
+       </div>
+       </div>
+       
+       <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>informacion</h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+       <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>actividad volcanica</h1>
+   <div>
+   <p>
+1363 Comienza a humear.
+1509
+1512
+1519 y 1528 arroja humo, cenizas y piedras incandescentes.
+1530 produce solo humo.
+1539 lanza grandes llamas, piedras y cenizas.
+1562.
+1570 Para este año incrementó la actividad sísmica.
+1571 Arrojó gran cantidad de cenizas.
+1592 Arrojó vapores y cenizas.
+1642.
+1663 Arroja gran cantidad de ceniza y con ella piedras pómez.
+1664.
+1665 Estuvo arrojando cenizas por varios días.
+1697 Hizo una erupción de fuego.
+1720 Registró una nueva erupción.
+1790, 1802 y 1804 Arrojaba una columna de humo.
+1919: La erupción registrada en este año fue considerada por algunos como consecuencia de una explosión de dinamita provocada para la extracción de azufre. Los orígenes de esta actividad la inició Hernán Cortés en 1519 cuando mandó a Diego de Ordaz a que subiera el Popo pero no logró alcanzar el cráter; en cambio al año siguiente otros soldados sacaron azufre para fabricar pólvora.
+En 1947 ocurrió una erupción de consideración, para iniciar así un periodo de actividad.
+A lo largo de 1992 y 1993 aumentaron las fumarolas y los microsismos.
+21 de diciembre de 1994 registró una explosión que produjo gas y cenizas que fueron transportados por los vientos dominantes, llegando llegaron más allá del Estado de Puebla. Cabe señalar que en este año los monasterios del siglo XVI construidos en las laderas del volcán, fueron declarados Patrimonio de la Humanidad por la UNESCO.
+1995 Registro una actividad fluctuante.
+Marzo de 1996: En esta año aumentó la actividad y se formó un domo en el cráter.
+30 de abril de 1996, El popo lanza una lluvia de piedras incandescentes, provocando la muerte de cinco expertos alpinistas que exploraban el volcán. Durante este año también se registraron varios microsismos.
+El 30 de junio de 1997 lanzó una fumarola de 8 kilómetros de altura y 50 kilómetros de diámetro.
+20 de junio del 2003.
+21 de septiembre del 2003.
+25 de diciembre de 2005: Se produjo una nueva explosión que provocó una columna de humo y cenizas de tres kilómetros de altura y la expulsión de lava. </p>
+   <br>
+   </div>
+   <div> <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','imagenes/ac2.jpg',1)"><img src="imagenes/ac.jpg" width="275" height="183" id="Image18"></a></div>
+   </div>
+   </div>
+   <!--asdasdasdasdsadasdasdasd-->
+   <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>monitoreo</h1>
+   <div>
+   <p>México se encuentra situado en una región con importante actividad volcánica. De los 3,000 volcanes que aproximadamente tiene el país, 14 son considerados activos. El país ha vivido actividades recientes de volcanes que han presentado fases eruptivas importantes, algunas con consecuencias desastrosas, ejemplo de ello son el Paricutín, en Michoacán, que hizo erupción en 1943, el Chichón, en Chiapas, en 1982; el Tacaná, en Chiapas, en 1986 y el volcán de Colima, el cual ha tenido episodios de gran actividad en los últimos años. La prueba más reciente se vivió a finales de 1994 cuando el volcán Popocatépetl, pasó de una fase moderada de actividad a una de gran actividad sísmica y fumarólica con abundante emisión de gases, cenizas, extrusión de lava e incluso producción de flujos piroclásticos durante los eventos eruptivos de mayo y junio de 1997.
+El Popocatépetl, es un estratovolcán andesítico-dacítico, localizado a 60 km al sureste de la Ciudad de México y a 45 km al oeste de la Ciudad de Puebla. Tiene una altura de 5452 msnm y un cráter de 900 m de diámetro y aprox. 200 m de profundidad. Su edificio cubre un área de 500 km2 abarcando los estados de Puebla, México y Morelos.
+La única manera de percibir y evaluar el estado de actividad y riesgo asociado de un volcán, es a través de la observación y vigilancia sistemática mediante diversos métodos visuales e instrumentales. Si estos se aplican en forma anticipada en las fases previas a un proceso eruptivo, es posible, en la mayoría de los casos, detectar oportunamente un cambio cualitativo y cuantitativo de la actividad que inclusive pudiese conducir a una predicción en el corto plazo de un proceso eruptivo inminente y poner en marcha, de parte de las autoridades de Protección Civil el plan de emergencia previamente establecido. Una muestra de un sistema de vigilancia y monitoreo oportunamente establecido es el del volcán Popocatépetl. En un esfuerzo conjunto del Centro Nacional de Prevención de Desastres (CENAPRED), de la Secretaría de Gobernación, los Institutos de Geofísica y de Ingeniería , de la UNAM , y con la colaboración del Cascades Volcano Observatory, del U.S. Geological Survey, se estableció en los últimos años un complejo sistema de observación telemétrico con una central de adquisición y procesamiento de datos.
+Cuatro tipos de monitoreo se han establecido en el volcán: visual, sísmico, geodésico y geoquímico, de los cuales el más importante es el sísmico. La red de monitoreo del Popocatépetl está compuesta por 15 estaciones localizadas en las laderas circundantes del volcán en sitios con altitudes de hasta 4300 m y a 1.5 km del cráter. La instrumentación consta de 8 sismógrafos triaxiales de periodo corto, 4 de banda ancha, 4 inclinómetros biaxiales para medir deformación, una cámara de video con enlace de microondas, un radar doppler meteorológico y diversos equipos para mediciones geodésicas, análisis químicos y determinación de las concentraciones de gases SO2 y CO2. Más de 50 señales de telemetría son trasmitidas en forma continua hacia un puesto central de registro y procesamiento localizado en el CENAPRED. Allí y mediante una extensa red de computadoras, la actividad es monitoreada y procesada las 24 horas del día. Al detectarse cualquier incremento anormal de la actividad sísmica del volcán, se activa un sistema de alarma acústica y a través de un sistema de marcado automático se envian mensajes a teléfonos particulares celulares y localizadores del personal de guardia . Del análisis de la información, las recomendaciones relativas al nivel de alertamiento son tomadas por el Comité Técnico Científico Asesor, integrado por eminentes investigadores de la UNAM y del CENAPRED. Mediante reportes especiales, autoridades del gobierno y de Protección Civil son informadas periódicamente acerca del nivel de actividad del volcán. Para el público en general se dispone de un buzón telefónico con mensajes sobre su estado de actividad.
+Con la participación de diversas instituciones y un enorme esfuerzo realizado por parte del personal encargado, se ha logrado en un plazo corto, poner en operación una extensa infraestructura de registro y monitoreo que permite ya la vigilancia estrecha del volcán así como la detección oportuna de cualquier cambio en su estado de actividad.
+ </p>
+ <p> <font size="7"> <a href ="http://www.cenapred.unam.mx/es/"> cenapred</a>  </font></p>
+   <br>
+   </div>
+   <div>   <img src="imagenes/mo.jpg"></div>
+   </div>
+   </div>
+   <!--asdasdasdasdasdasdas -->
+   
+       </div>
+       <div data-role="footer"data-theme="a" data-position="fixed">
+       <h4>Aplicacion Uno, ipr</h4>
+       </div>
+       </div>
+       </div>
+       
+        <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>medidas preventivas</h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+      <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>medidas de  prevencion</h1>
+   <div>
+   <p>La institución ha ofrecido pláticas, colocado lonas y distribuido 20 mil trípticos en las comunas más cercanas al cráter
+Como parte de las acciones del Plan Popocatépetl y para fomentar la cultura de autoprotección, el Instituto Estatal de Protección Civil (IEPC) reforzó la difusión de las medidas preventivas en Tlaxcala, principalmente en las comunidades de los 18 municipios más cercanos al cráter.
+
+El titular de la dependencia estatal, Mateo Morales Báez, puntualizó que desde que inició la contingencia, en la primera quincena de este mes, el personal a su cargo ha entregado alrededor de 20 mil trípticos con información detallada de qué hacer ante la eventual caída de ceniza volcánica y dónde se ubican las rutas de evacuación.
+
+De hecho, indicó que la institución ha colocado 500 lonas en lugares estratégicos y visibles en las comunidades más cercanas al cráter, como entronques y cruces viales, así como en espacios de concentración masiva.
+
+Además, los trabajadores del Instituto Estatal de Protección Civil, en coordinación con la Secretaría de Educación Pública del Estado, imparten pláticas en las escuelas de nivel básico para que los escolares, a su vez, comenten y pongan en práctica en sus hogares las medidas preventivas ante la actividad del coloso.
+
+Reiteró que estas acciones forman parte del Plan Popocatépetl 2012, y tienen como objetivo la protección de los habitantes, para evitar enfermedades respiratorias o cutáneas, o bien afectaciones en drenajes, techos de viviendas o caminos.
+
+Entre las recomendaciones que hace el IEPC a través de diferentes medios se encuentran: cubrir nariz y boca, en caso de tener la necesidad de salir a la intemperie, evitar hacer ejercicio al aire libre, no tallarse los ojos y encaso de alguna irritación acudir al Centro de Salud más cercano.
+
+Agregó que también se recomienda cerrar puertas y ventanas, sellar con trapos húmedos las rendijas y las ventilas para limitar la entrada de ceniza a casas y edificios, así como sacudir la ceniza con plumeros para que no se rayen las superficies de muebles y electrodomésticos.
+
+Otra de sugerencia es tapar tinacos y depósitos de agua en general para que no se ensucie, cubrir equipos y automóviles a fin de que no se deterioren, barrer continuamente la ceniza de los techos de las viviendas, sin usar agua para que no se colapsen, ya que al mojar este material volcánico aumenta de peso como si fuera una losa de cemento.
+
+“La ceniza que se recoja de techos o el suelo deberá guardarse en costales o bolsas de plástico; lo mismo debe hacerse con la ceniza de la calle, pues si se limpia con agua se corre el riesgo de que el drenaje se tape” acotó.
+
+El funcionario acentuó que es necesario restringir la circulación de vehículos encaso de la caída de ceniza, o bien deben circular a baja velocidad pues el asfalto se torna resbaloso.
+
+Mateo Morales abundó que se ha pedido a los habitantes de las zonas cercanas al Popocatépetl seguir las rutas de evacuación ya trazadas en el plan emergente.
+
+“Otra cosa importante es que la gente no haga caso a rumores que causan alarma, debemos estar atentos a la información que difunde el Centro Nacional de Prevención de Desastres a través de sus canales oficiales y en el caso de Tlaxcala al Instituto Estatal de Protección Civil”, finalizó.
+</p>
+   <br>
+   </div>
+   <div> <img src="imagenes/2.jpg"></div>
+   </div>
+   </div>
+   
+   
+   
+   
+   
+   
+   <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>estados que afecta </h1>
+   <div>
+   <p>El espacio territorial que se ha analizado en el estudio es de aproximadamente 15,708 km² y abarca el Distrito Federal, Tlaxcala, Morelos y parcialmente los estados de Hidalgo, México y Puebla. </p>
+   <br>
+   </div>
+   <div><img src="imagenes/1.jpg"></div>
+   </div>
+   </div>
+   
+   
+   
+   
+   
+   
+   
+       </div>
+       </div>
+      
+       <div data-role="footer"data-theme="a" data-position="fixed">
+       <h4>Aplicacion Uno, ipr</h4>
+       </div>
+       </div>
+       </div>
+       
+          
+      
+</body>
+</html>
